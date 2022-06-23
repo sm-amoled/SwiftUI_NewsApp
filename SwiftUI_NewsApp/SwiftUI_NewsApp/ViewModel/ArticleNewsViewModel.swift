@@ -39,6 +39,8 @@ class ArticleNewsViewModel: ObservableObject {
     }
     
     func loadArticles() async {
+        phase = .success(Article.previewData)
+        
         if Task.isCancelled { return }
         phase = .empty
         

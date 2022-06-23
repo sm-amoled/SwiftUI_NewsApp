@@ -24,6 +24,7 @@ struct NewsTabView: View {
         NavigationView {
             ArticleListView(articles: articles)
                 .overlay(overlayView)
+            
             // 비동기 요청을 위해서는 task를 사용하자.
             // id : 값이 변하면 메서드를 호출함
             // id 값이 없는 경우에는 onAppear 처럼 메서드를 호출하게 됨
@@ -73,14 +74,16 @@ struct NewsTabView: View {
         } label: {
             Image(systemName: "fiberchannel")
         }
-
     }
 }
 
 
 
 struct NewsTabView_Previews: PreviewProvider {
+    @StateObject static var articleBookmarkVM = ArticleBookmarkViewModel()
+    
     static var previews: some View {
         NewsTabView(articleNewsVM: ArticleNewsViewModel(articles: Article.previewData))
+            .environmentObject(articleBookmarkVM)
     }
 }
