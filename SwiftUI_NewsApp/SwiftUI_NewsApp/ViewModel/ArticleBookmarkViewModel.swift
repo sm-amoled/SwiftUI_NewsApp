@@ -11,6 +11,21 @@ import Foundation
 class ArticleBookmarkViewModel: ObservableObject {
     
     @Published private(set) var bookmarks: [Article] = []
+    private let bookmarkStore = PlistDataStore<[Article]>(filename: "bookmarks")
+    
+    static let shared = ArticleBookmarkViewModel()
+    
+    // 뷰모델이 init 되면 bookmark 저장소에서 값들을 load 해옴
+    // 이건 비동기로 처리함
+    private init() {
+        async {
+            await load()
+        }
+    }
+    
+    private func load() async {
+        bookmarks = await bookmarkStore.load() ?? []
+    }
     
     // array에 first 사용
     // 제일 앞에서부터 뒤로 순서대로 원소를 탐색함
@@ -28,6 +43,7 @@ class ArticleBookmarkViewModel: ObservableObject {
         }
         
         bookmarks.insert(article, at: 0)
+        bookmarkUpdated()
     }
     
     func removeBookmark(for article: Article) {
@@ -36,6 +52,15 @@ class ArticleBookmarkViewModel: ObservableObject {
             return
         }
         bookmarks.remove(at: index)
+        bookmarkUpdated()
+    }
+    
+    private func bookmarkUpdated() {
+        let bookmarks = self.bookmarks
+        
+        async {
+            await bookmarkStore.save(bookmarks)
+        }
     }
 }
 
