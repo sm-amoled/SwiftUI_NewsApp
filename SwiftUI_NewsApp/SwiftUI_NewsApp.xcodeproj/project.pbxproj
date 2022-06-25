@@ -7,9 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3426C4332866A1DA00D54C75 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426C4322866A1DA00D54C75 /* MenuItem.swift */; };
+		3426C4342866A6DA00D54C75 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426C4322866A1DA00D54C75 /* MenuItem.swift */; };
+		3426C4352866B60600D54C75 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582A7286325CD006CB29D /* ArticleListView.swift */; };
+		3426C4362866B60600D54C75 /* NewsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B328635E6E006CB29D /* NewsTabView.swift */; };
+		3426C4372866B60600D54C75 /* RetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B7286381CD006CB29D /* RetryView.swift */; };
+		3426C4382866B60600D54C75 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B528638161006CB29D /* EmptyPlaceholderView.swift */; };
+		3426C4392866B60600D54C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34679DEF28669FF500CC8FE9 /* Assets.xcassets */; };
+		3426C43A2866B60600D54C75 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B53CE92863002300719A64 /* ArticleRowView.swift */; };
 		34679DE628661EAA00CC8FE9 /* ArticleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE528661EAA00CC8FE9 /* ArticleSearchViewModel.swift */; };
 		34679DE828662B9B00CC8FE9 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE728662B9B00CC8FE9 /* SearchTabView.swift */; };
 		34679DEA286637A600CC8FE9 /* SearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE9286637A600CC8FE9 /* SearchHistoryListView.swift */; };
+		34679DF028669FF500CC8FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34679DEF28669FF500CC8FE9 /* Assets.xcassets */; };
+		34679DF628669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34679DF528669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34679DFB28669FF500CC8FE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DFA28669FF500CC8FE9 /* ContentView.swift */; };
+		34679DFD28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DFC28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift */; };
+		34679DFF28669FF500CC8FE9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DFE28669FF500CC8FE9 /* ComplicationController.swift */; };
+		34679E0128669FF500CC8FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34679E0028669FF500CC8FE9 /* Assets.xcassets */; };
+		34679E0428669FF500CC8FE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34679E0328669FF500CC8FE9 /* Preview Assets.xcassets */; };
+		34679E0828669FF500CC8FE9 /* SwiftUI-NewsApp-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 34679DED28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34679E112866A14700CC8FE9 /* NewsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B53CE62862CA9700719A64 /* NewsAPIResponse.swift */; };
+		34679E122866A14700CC8FE9 /* ArticleBookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B92864BA70006CB29D /* ArticleBookmarkViewModel.swift */; };
+		34679E132866A14700CC8FE9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B53CE42862C5E000719A64 /* Article.swift */; };
+		34679E142866A14700CC8FE9 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 3489CD312862C47A00523911 /* news.json */; };
+		34679E152866A14700CC8FE9 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582AC28634FF6006CB29D /* NewsAPI.swift */; };
+		34679E162866A14700CC8FE9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582AE286350FA006CB29D /* Category.swift */; };
+		34679E172866A14700CC8FE9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582BD28656556006CB29D /* DataStore.swift */; };
+		34679E182866A14700CC8FE9 /* ArticleNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B1286358E5006CB29D /* ArticleNewsViewModel.swift */; };
+		34679E192866A14700CC8FE9 /* ArticleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE528661EAA00CC8FE9 /* ArticleSearchViewModel.swift */; };
 		3489CD242862BF8500523911 /* SwiftUI_NewsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489CD232862BF8500523911 /* SwiftUI_NewsAppApp.swift */; };
 		3489CD262862BF8500523911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489CD252862BF8500523911 /* ContentView.swift */; };
 		3489CD282862BF8700523911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3489CD272862BF8700523911 /* Assets.xcassets */; };
@@ -31,10 +56,62 @@
 		34D582BE28656556006CB29D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582BD28656556006CB29D /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		34679DF728669FF500CC8FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3489CD182862BF8500523911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34679DF428669FF500CC8FE9;
+			remoteInfo = "SwiftUI-NewsApp-Watch WatchKit Extension";
+		};
+		34679E0628669FF500CC8FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3489CD182862BF8500523911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34679DEC28669FF300CC8FE9;
+			remoteInfo = "SwiftUI-NewsApp-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34679E0C28669FF500CC8FE9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34679DF628669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34679E1028669FF500CC8FE9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				34679E0828669FF500CC8FE9 /* SwiftUI-NewsApp-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3426C4322866A1DA00D54C75 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		34679DE528661EAA00CC8FE9 /* ArticleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchViewModel.swift; sourceTree = "<group>"; };
 		34679DE728662B9B00CC8FE9 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
 		34679DE9286637A600CC8FE9 /* SearchHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryListView.swift; sourceTree = "<group>"; };
+		34679DED28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-NewsApp-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34679DEF28669FF500CC8FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34679DF528669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SwiftUI-NewsApp-Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34679DFA28669FF500CC8FE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34679DFC28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NewsAppApp.swift; sourceTree = "<group>"; };
+		34679DFE28669FF500CC8FE9 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		34679E0028669FF500CC8FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34679E0328669FF500CC8FE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34679E0528669FF500CC8FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3489CD202862BF8500523911 /* SwiftUI_NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3489CD232862BF8500523911 /* SwiftUI_NewsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NewsAppApp.swift; sourceTree = "<group>"; };
 		3489CD252862BF8500523911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		34679DF228669FF500CC8FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3489CD1D2862BF8500523911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,10 +153,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34679DEE28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				34679DEF28669FF500CC8FE9 /* Assets.xcassets */,
+			);
+			path = "SwiftUI-NewsApp-Watch";
+			sourceTree = "<group>";
+		};
+		34679DF928669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				34679DFC28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift */,
+				34679DFE28669FF500CC8FE9 /* ComplicationController.swift */,
+				34679DFA28669FF500CC8FE9 /* ContentView.swift */,
+				34679E0028669FF500CC8FE9 /* Assets.xcassets */,
+				34679E0528669FF500CC8FE9 /* Info.plist */,
+				34679E0228669FF500CC8FE9 /* Preview Content */,
+			);
+			path = "SwiftUI-NewsApp-Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		34679E0228669FF500CC8FE9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34679E0328669FF500CC8FE9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		3489CD172862BF8500523911 = {
 			isa = PBXGroup;
 			children = (
 				3489CD222862BF8500523911 /* SwiftUI_NewsApp */,
+				34679DEE28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */,
+				34679DF928669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */,
 				3489CD212862BF8500523911 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				3489CD202862BF8500523911 /* SwiftUI_NewsApp.app */,
+				34679DED28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch.app */,
+				34679DF528669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +234,7 @@
 				34B53CE62862CA9700719A64 /* NewsAPIResponse.swift */,
 				34D582AE286350FA006CB29D /* Category.swift */,
 				34D582BD28656556006CB29D /* DataStore.swift */,
+				3426C4322866A1DA00D54C75 /* MenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +276,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		34679DEC28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34679E0D28669FF500CC8FE9 /* Build configuration list for PBXNativeTarget "SwiftUI-NewsApp-Watch" */;
+			buildPhases = (
+				34679DEB28669FF300CC8FE9 /* Resources */,
+				34679E0C28669FF500CC8FE9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34679DF828669FF500CC8FE9 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-NewsApp-Watch";
+			productName = "SwiftUI-NewsApp-Watch";
+			productReference = 34679DED28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		34679DF428669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34679E0928669FF500CC8FE9 /* Build configuration list for PBXNativeTarget "SwiftUI-NewsApp-Watch WatchKit Extension" */;
+			buildPhases = (
+				34679DF128669FF500CC8FE9 /* Sources */,
+				34679DF228669FF500CC8FE9 /* Frameworks */,
+				34679DF328669FF500CC8FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-NewsApp-Watch WatchKit Extension";
+			productName = "SwiftUI-NewsApp-Watch WatchKit Extension";
+			productReference = 34679DF528669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		3489CD1F2862BF8500523911 /* SwiftUI_NewsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3489CD2E2862BF8700523911 /* Build configuration list for PBXNativeTarget "SwiftUI_NewsApp" */;
@@ -165,10 +317,12 @@
 				3489CD1C2862BF8500523911 /* Sources */,
 				3489CD1D2862BF8500523911 /* Frameworks */,
 				3489CD1E2862BF8500523911 /* Resources */,
+				34679E1028669FF500CC8FE9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				34679E0728669FF500CC8FE9 /* PBXTargetDependency */,
 			);
 			name = SwiftUI_NewsApp;
 			productName = SwiftUI_NewsApp;
@@ -185,6 +339,12 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					34679DEC28669FF300CC8FE9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					34679DF428669FF500CC8FE9 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					3489CD1F2862BF8500523911 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -204,11 +364,32 @@
 			projectRoot = "";
 			targets = (
 				3489CD1F2862BF8500523911 /* SwiftUI_NewsApp */,
+				34679DEC28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */,
+				34679DF428669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		34679DEB28669FF300CC8FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34679DF028669FF500CC8FE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34679DF328669FF500CC8FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34679E142866A14700CC8FE9 /* news.json in Resources */,
+				34679E0428669FF500CC8FE9 /* Preview Assets.xcassets in Resources */,
+				3426C4392866B60600D54C75 /* Assets.xcassets in Resources */,
+				34679E0128669FF500CC8FE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3489CD1E2862BF8500523911 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +403,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		34679DF128669FF500CC8FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34679DFD28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift in Sources */,
+				34679DFB28669FF500CC8FE9 /* ContentView.swift in Sources */,
+				3426C4382866B60600D54C75 /* EmptyPlaceholderView.swift in Sources */,
+				34679E132866A14700CC8FE9 /* Article.swift in Sources */,
+				3426C4372866B60600D54C75 /* RetryView.swift in Sources */,
+				34679E112866A14700CC8FE9 /* NewsAPIResponse.swift in Sources */,
+				3426C43A2866B60600D54C75 /* ArticleRowView.swift in Sources */,
+				34679E122866A14700CC8FE9 /* ArticleBookmarkViewModel.swift in Sources */,
+				3426C4352866B60600D54C75 /* ArticleListView.swift in Sources */,
+				34679E192866A14700CC8FE9 /* ArticleSearchViewModel.swift in Sources */,
+				3426C4362866B60600D54C75 /* NewsTabView.swift in Sources */,
+				34679E152866A14700CC8FE9 /* NewsAPI.swift in Sources */,
+				34679E182866A14700CC8FE9 /* ArticleNewsViewModel.swift in Sources */,
+				34679DFF28669FF500CC8FE9 /* ComplicationController.swift in Sources */,
+				3426C4342866A6DA00D54C75 /* MenuItem.swift in Sources */,
+				34679E172866A14700CC8FE9 /* DataStore.swift in Sources */,
+				34679E162866A14700CC8FE9 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3489CD1C2862BF8500523911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +440,7 @@
 				34D582B8286381CD006CB29D /* RetryView.swift in Sources */,
 				3489CD242862BF8500523911 /* SwiftUI_NewsAppApp.swift in Sources */,
 				34B53CE72862CA9700719A64 /* NewsAPIResponse.swift in Sources */,
+				3426C4332866A1DA00D54C75 /* MenuItem.swift in Sources */,
 				34679DE828662B9B00CC8FE9 /* SearchTabView.swift in Sources */,
 				34679DE628661EAA00CC8FE9 /* ArticleSearchViewModel.swift in Sources */,
 				34D582AF286350FA006CB29D /* Category.swift in Sources */,
@@ -250,7 +456,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		34679DF828669FF500CC8FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34679DF428669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */;
+			targetProxy = 34679DF728669FF500CC8FE9 /* PBXContainerItemProxy */;
+		};
+		34679E0728669FF500CC8FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34679DEC28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */;
+			targetProxy = 34679E0628669FF500CC8FE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		34679E0A28669FF500CC8FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-NewsApp-Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JPL38XBHJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-NewsApp-Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI-NewsApp-Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.led.SwiftUI-NewsApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		34679E0B28669FF500CC8FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-NewsApp-Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = JPL38XBHJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-NewsApp-Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI-NewsApp-Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.led.SwiftUI-NewsApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		34679E0E28669FF500CC8FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPL38XBHJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SwiftUI_NewsApp_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI-NewsApp-Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.led.SwiftUI-NewsApp";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.led.SwiftUI-NewsApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		34679E0F28669FF500CC8FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JPL38XBHJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SwiftUI_NewsApp_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI-NewsApp-Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.led.SwiftUI-NewsApp";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.led.SwiftUI-NewsApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 		3489CD2C2862BF8700523911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +761,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		34679E0928669FF500CC8FE9 /* Build configuration list for PBXNativeTarget "SwiftUI-NewsApp-Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34679E0A28669FF500CC8FE9 /* Debug */,
+				34679E0B28669FF500CC8FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34679E0D28669FF500CC8FE9 /* Build configuration list for PBXNativeTarget "SwiftUI-NewsApp-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34679E0E28669FF500CC8FE9 /* Debug */,
+				34679E0F28669FF500CC8FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3489CD1B2862BF8500523911 /* Build configuration list for PBXProject "SwiftUI_NewsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
