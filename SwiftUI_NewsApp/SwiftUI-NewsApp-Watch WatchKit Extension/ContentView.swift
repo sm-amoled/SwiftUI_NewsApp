@@ -9,38 +9,51 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedMenuItemId: MenuItem.ID?
+    @EnvironmentObject var searchVM: ArticleSearchViewModel
     
     var body: some View {
-        List {
-            Section {
-                navigationLinkForMenuItem(.saved) {
-                    Label(MenuItem.saved.text, systemImage: MenuItem.saved.systemImage)
-                }
+        
+        ZStack{
+            navigationLinkForMenuItem(MenuItem.search) {
+                EmptyView()
             }
+            .hidden()
             
-            Section {
-                ForEach(Category.menuItems) { item in
-                    navigationLinkForMenuItem(item) {
-                        listRowForCategoryMenuItem(item)
+            List {
+                Section {
+                    navigationLinkForMenuItem(.saved) {
+                        Label(MenuItem.saved.text, systemImage: MenuItem.saved.systemImage)
                     }
                 }
-            } header: {
-                Text("Categories")
+                
+                Section {
+                    ForEach(Category.menuItems) { item in
+                        navigationLinkForMenuItem(item) {
+                            listRowForCategoryMenuItem(item)
+                        }
+                    }
+                } header: {
+                    Text("Categories")
+                }
             }
+            .searchable(text: $searchVM.searchQuery)
+            .onSubmit(of: .search, search)
+            .navigationTitle("My News App")
         }
-        .searchable(text: .constant(""))
-        .navigationTitle("My News App")
     }
     
     @ViewBuilder
     private func viewForMenuItem(_ item: MenuItem) -> some View {
         switch item {
         case .saved:
-            Text("Saved")
+            BookmarkTabView()
         case .search:
-            Text("Search")
+            SearchTabView()
+                .onDisappear {
+                    searchVM.searchQuery = ""
+                }
         case .category(let category):
-            Text("Category: \(category.rawValue)")
+            NewsTabView(category: category)
         }
     }
     
@@ -73,6 +86,19 @@ struct ContentView: View {
             Text(item.text)
         }
         .padding(.vertical, 10)
+    }
+    
+    private func search() {
+        let searchQuery = searchVM.searchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if searchQuery.isEmpty {
+            return
+        }
+        
+        selectedMenuItemId = MenuItem.search.id
+        Task {
+            await searchVM.searchArticle()
+        }
     }
 }
 
@@ -109,5 +135,7 @@ fileprivate extension MenuItem {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ArticleSearchViewModel.shared)
+            .environmentObject(ArticleBookmarkViewModel.shared)
     }
 }

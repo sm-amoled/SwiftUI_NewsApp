@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct SwiftUI_NewsAppApp: App {
+    
+    @StateObject private var bookmarkVM = ArticleBookmarkViewModel.shared
+    @StateObject private var searchVM = ArticleSearchViewModel.shared
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
             }
+            .environmentObject(bookmarkVM)
+            .environmentObject(searchVM)
         }
     }
 }

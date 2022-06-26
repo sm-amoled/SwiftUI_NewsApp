@@ -23,7 +23,9 @@ struct SearchHistoryListView: View {
                 }
                 .foregroundColor(.accentColor)
             }
+            #if os(iOS)
             .listRowSeparator(.hidden)
+            #endif
             
             ForEach(searchVM.history, id: \.self) { history in
                 Button(history) {

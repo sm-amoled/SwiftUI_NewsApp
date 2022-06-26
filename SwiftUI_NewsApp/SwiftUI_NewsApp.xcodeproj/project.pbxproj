@@ -15,6 +15,10 @@
 		3426C4382866B60600D54C75 /* EmptyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582B528638161006CB29D /* EmptyPlaceholderView.swift */; };
 		3426C4392866B60600D54C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34679DEF28669FF500CC8FE9 /* Assets.xcassets */; };
 		3426C43A2866B60600D54C75 /* ArticleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B53CE92863002300719A64 /* ArticleRowView.swift */; };
+		3426C43D28674F6C00D54C75 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426C43C28674F6B00D54C75 /* ArticleDetailView.swift */; };
+		3426C43E2867FD2B00D54C75 /* BookmarkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D582BB2864C318006CB29D /* BookmarkTabView.swift */; };
+		3426C43F2868021200D54C75 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE728662B9B00CC8FE9 /* SearchTabView.swift */; };
+		3426C4402868029500D54C75 /* SearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE9286637A600CC8FE9 /* SearchHistoryListView.swift */; };
 		34679DE628661EAA00CC8FE9 /* ArticleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE528661EAA00CC8FE9 /* ArticleSearchViewModel.swift */; };
 		34679DE828662B9B00CC8FE9 /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE728662B9B00CC8FE9 /* SearchTabView.swift */; };
 		34679DEA286637A600CC8FE9 /* SearchHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34679DE9286637A600CC8FE9 /* SearchHistoryListView.swift */; };
@@ -100,6 +104,7 @@
 
 /* Begin PBXFileReference section */
 		3426C4322866A1DA00D54C75 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3426C43C28674F6B00D54C75 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		34679DE528661EAA00CC8FE9 /* ArticleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchViewModel.swift; sourceTree = "<group>"; };
 		34679DE728662B9B00CC8FE9 /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
 		34679DE9286637A600CC8FE9 /* SearchHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryListView.swift; sourceTree = "<group>"; };
@@ -153,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3426C43B28674F6000D54C75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3426C43C28674F6B00D54C75 /* ArticleDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		34679DEE28669FF300CC8FE9 /* SwiftUI-NewsApp-Watch */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +177,7 @@
 		34679DF928669FF500CC8FE9 /* SwiftUI-NewsApp-Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3426C43B28674F6000D54C75 /* Views */,
 				34679DFC28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift */,
 				34679DFE28669FF500CC8FE9 /* ComplicationController.swift */,
 				34679DFA28669FF500CC8FE9 /* ContentView.swift */,
@@ -409,10 +423,14 @@
 			files = (
 				34679DFD28669FF500CC8FE9 /* SwiftUI_NewsAppApp.swift in Sources */,
 				34679DFB28669FF500CC8FE9 /* ContentView.swift in Sources */,
+				3426C4402868029500D54C75 /* SearchHistoryListView.swift in Sources */,
 				3426C4382866B60600D54C75 /* EmptyPlaceholderView.swift in Sources */,
 				34679E132866A14700CC8FE9 /* Article.swift in Sources */,
+				3426C43E2867FD2B00D54C75 /* BookmarkTabView.swift in Sources */,
 				3426C4372866B60600D54C75 /* RetryView.swift in Sources */,
+				3426C43F2868021200D54C75 /* SearchTabView.swift in Sources */,
 				34679E112866A14700CC8FE9 /* NewsAPIResponse.swift in Sources */,
+				3426C43D28674F6C00D54C75 /* ArticleDetailView.swift in Sources */,
 				3426C43A2866B60600D54C75 /* ArticleRowView.swift in Sources */,
 				34679E122866A14700CC8FE9 /* ArticleBookmarkViewModel.swift in Sources */,
 				3426C4352866B60600D54C75 /* ArticleListView.swift in Sources */,

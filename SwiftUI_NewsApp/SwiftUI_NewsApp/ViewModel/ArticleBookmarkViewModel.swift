@@ -62,5 +62,13 @@ class ArticleBookmarkViewModel: ObservableObject {
             await bookmarkStore.save(bookmarks)
         }
     }
+    
+    func toggleBookmark(for article: Article) {
+        if isBookmarked(for: article) {
+            removeBookmark(for: article)
+        } else {
+            addBookmark(for: article)
+        }
+    }
 }
 

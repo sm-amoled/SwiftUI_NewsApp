@@ -15,12 +15,14 @@ struct BookmarkTabView: View {
     var body: some View {
         let articles = self.articles
         
-        NavigationView {
-            ArticleListView(articles: articles)
-                .overlay(overlayView(isEmpty: articles.isEmpty))
+        ArticleListView(articles: articles)
+            .overlay(overlayView(isEmpty: articles.isEmpty))
             .navigationTitle("Saved Articles")
-        }
-        .searchable(text: $searchText)
+            #if os(watchOS)
+            .conditionalSearchable(showSearchbar: !articles.isEmpty, searchText: $searchText)
+            #else
+            .searchable(text: $searchText)
+            #endif
     }
     
     private var articles: [Article] {
@@ -41,8 +43,20 @@ struct BookmarkTabView: View {
             EmptyPlaceholderView(text: "No saved articles", image: Image(systemName: "bookmark"))
         }
     }
-    
 }
+
+#if os(watchOS)
+fileprivate extension View {
+    @ViewBuilder
+    func conditionalSearchable(showSearchbar: Bool, searchText: Binding<String>) -> some View {
+        if showSearchbar {
+            searchable(text: searchText)
+        } else {
+            self
+        }
+    }
+}
+#endif
 
 struct BookmarkTabView_Previews: PreviewProvider {
     static var previews: some View {

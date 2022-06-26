@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SearchTabView: View {
     
+    #if os(iOS)
     @StateObject var searchVM = ArticleSearchViewModel.shared
+    #elseif os(watchOS)
+    @EnvironmentObject var searchVM: ArticleSearchViewModel
+    #endif
     
     var body: some View {
         NavigationView {
@@ -24,6 +28,9 @@ struct SearchTabView: View {
             }
         }
         .onSubmit(of: .search, search) // searchable의 search가 onSubmin 될 때 search 함수를 호출하
+        #if os(watchOS)
+        .navigationTitle(searchVM.currentSearch == nil ? "Search" : "Search results for \(searchVM.currentSearch!)")
+        #endif
     }
     
     private var articles: [Article] {
@@ -38,6 +45,7 @@ struct SearchTabView: View {
     private var overlayView: some View {
         switch searchVM.phase {
         case .empty:
+            #if os(iOS)
             if !searchVM.searchQuery.isEmpty {
                 ProgressView()
             } else if !searchVM.history.isEmpty {
@@ -47,6 +55,9 @@ struct SearchTabView: View {
             }  else {
                 EmptyPlaceholderView(text: "Type your query to search from NewsAPI", image: Image(systemName: "magnifyingglass"))
             }
+            #elseif os(watchOS)
+                ProgressView()
+            #endif
             
         case .success(let articles) where articles.isEmpty:
             EmptyPlaceholderView(text: "No search results found", image: Image(systemName: "magnifyingglass"))

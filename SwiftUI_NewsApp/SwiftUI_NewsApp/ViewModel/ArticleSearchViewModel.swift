@@ -13,6 +13,8 @@ class ArticleSearchViewModel: ObservableObject {
     @Published var phase : DataFetchPhase<[Article]> = .empty
     @Published var searchQuery = ""
     @Published var history = [String]()
+    @Published var currentSearch: String?
+
     
     // 데이터 저장을 위한 Plist 정의
     private let historyDataStore = PlistDataStore<[String]>(filename: "histories")
@@ -65,10 +67,11 @@ class ArticleSearchViewModel: ObservableObject {
             return
         }
         
+        currentSearch = searchQuery
         do {
             let articles = try await newsAPI.search(for: searchQuery)
             if Task.isCancelled { return }
-            if searchQuery != self.searchQuery {
+            if searchQuery != trimmedSearchQuery {
                 return
             }
             phase = .success(articles)
@@ -82,7 +85,7 @@ class ArticleSearchViewModel: ObservableObject {
     }
     
     private func load() {
-        async {
+        Task {
             self.history = await historyDataStore.load() ?? []
         }
     }
@@ -90,7 +93,7 @@ class ArticleSearchViewModel: ObservableObject {
     private func historiesUpdated() {
         let history = self.history
         
-        async {
+        Task {
             await historyDataStore.save(history)
         }
     }

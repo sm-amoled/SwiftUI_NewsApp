@@ -102,6 +102,7 @@ struct NewsTabView: View {
         }
     }
     #endif
+
 }
 
 struct NewsTabView_Previews: PreviewProvider {
@@ -114,3 +115,4 @@ struct NewsTabView_Previews: PreviewProvider {
             .environmentObject(articleBookmarkVM)
     }
 }
+
